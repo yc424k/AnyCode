@@ -11,12 +11,13 @@ PAGE = """\
 <title>Raspberry Pi - Surveillance Camera</title>
 </head>
 <body>
-<center><img src="stream.mjpg" width="720" height="1280"></center>
+<center><img src="stream.mjpg" width="1080" height="1920"></center>
 </body>
 </html>
 """
-
-
+print('----------------------')
+print('Start Camera Streaming')
+print('----------------------')
 class StreamingOutput(object):
     def __init__(self):
         self.frame = None
